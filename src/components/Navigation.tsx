@@ -78,12 +78,12 @@ export const Navigation = () => {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-sm">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="w-full flex items-center justify-between h-16">
-            <h1 className="text-xl font-bold tracking-tight font-display">Portfolio</h1>
+        <div className="w-full px-4 lg:px-8">
+          <div className="flex items-center justify-between h-16 max-w-full">
+            <h1 className="text-xl font-bold tracking-tight font-display flex-shrink-0">Portfolio</h1>
             
             {/* Desktop Navigation (with icons) */}
-            <div className="hidden md:flex items-center gap-1">
+            <div className="hidden md:flex items-center gap-1 flex-shrink-0">
               {navItems.map((item) => {
                 const Icon = item.icon as any;
                 return (
@@ -105,17 +105,16 @@ export const Navigation = () => {
               })}
             </div>
 
-            {/* Mobile Menu Button: larger/right-side pill */}
+            {/* Mobile Menu Button */}
             <Button
               variant="ghost"
               size="sm"
-              className="md:hidden px-4 py-2 rounded-full flex items-center gap-2 bg-muted/10 hover:bg-muted/20"
+              className="md:hidden p-2 flex-shrink-0"
               onClick={() => setIsOpen(!isOpen)}
               aria-expanded={isOpen}
               aria-label={isOpen ? "Close menu" : "Open menu"}
             >
-              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-              <span className="hidden sm:inline-block font-medium">{isOpen ? 'Close' : 'Menu'}</span>
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
