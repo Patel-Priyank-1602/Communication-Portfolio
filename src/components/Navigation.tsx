@@ -51,6 +51,18 @@ export const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    // Prevent body scroll when menu is open
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -67,7 +79,7 @@ export const Navigation = () => {
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-sm">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="w-full flex items-center justify-between h-16">
             <h1 className="text-xl font-bold tracking-tight font-display">Portfolio</h1>
             
             {/* Desktop Navigation (with icons) */}
@@ -107,53 +119,50 @@ export const Navigation = () => {
             </Button>
           </div>
         </div>
+      </nav>
 
-        {/* Mobile Navigation: slide-in from right */}
-        {/* overlay */}
-        <div
-          className={`md:hidden fixed inset-0 z-40 transition-opacity duration-200 ${
-            isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-          }`}
-          aria-hidden={!isOpen}
-          onClick={() => setIsOpen(false)}
-        >
-          <div className="absolute inset-0 bg-black/40" />
+      {/* Mobile Menu Overlay - covers everything */}
+      <div
+        className={`fixed inset-0 bg-black/70 backdrop-blur-sm z-[60] md:hidden transition-opacity duration-300 ${
+          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setIsOpen(false)}
+        aria-hidden={!isOpen}
+      />
+
+      {/* Mobile Menu Panel - slides in from right */}
+      <aside
+        className={`fixed top-0 right-0 h-full w-72 z-[70] bg-background border-l border-border shadow-2xl md:hidden transform transition-transform duration-300 ease-in-out ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+        aria-hidden={!isOpen}
+      >
+        <div className="flex items-center justify-between p-4 border-b border-border">
+          <h2 className="font-semibold">Menu</h2>
+          <Button variant="ghost" onClick={() => setIsOpen(false)} aria-label="Close menu">
+            <X className="h-5 w-5" />
+          </Button>
         </div>
 
-        {/* panel */}
-        <aside
-          className={`md:hidden fixed top-0 right-0 h-full w-72 z-50 bg-background border-l border-border shadow-lg transform transition-transform duration-300 ease-in-out ${
-            isOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-          aria-hidden={!isOpen}
-        >
-          <div className="flex items-center justify-between p-4 border-b border-border">
-            <h2 className="font-semibold">Menu</h2>
-            <Button variant="ghost" onClick={() => setIsOpen(false)} aria-label="Close menu">
-              <X className="h-5 w-5" />
-            </Button>
-          </div>
-
-          <div className="p-4 space-y-2">
-            {navItems.map((item) => {
-              const Icon = item.icon as any;
-              return (
-                <Button
-                  key={item.id}
-                  variant="ghost"
-                  onClick={() => scrollToSection(item.id)}
-                  className={`w-full justify-start gap-3 ${
-                    activeSection === item.id ? "text-foreground font-medium bg-muted" : "text-muted-foreground"
-                  }`}
-                >
-                  <Icon className="h-5 w-5" />
-                  <span>{item.label}</span>
-                </Button>
-              );
-            })}
-          </div>
-        </aside>
-      </nav>
+        <div className="p-4 space-y-2 overflow-y-auto h-[calc(100%-4rem)]">
+          {navItems.map((item) => {
+            const Icon = item.icon as any;
+            return (
+              <Button
+                key={item.id}
+                variant="ghost"
+                onClick={() => scrollToSection(item.id)}
+                className={`w-full justify-start gap-3 ${
+                  activeSection === item.id ? "text-foreground font-medium bg-muted" : "text-muted-foreground"
+                }`}
+              >
+                <Icon className="h-5 w-5" />
+                <span>{item.label}</span>
+              </Button>
+            );
+          })}
+        </div>
+      </aside>
 
       {/* Back to top button */}
       {showUp && (
