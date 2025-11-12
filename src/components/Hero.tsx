@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Instagram, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
@@ -51,6 +51,7 @@ export const Hero = () => {
               "Dedicated to excellence through continuous learning and innovation"
             </p>
 
+            {/* Explore Portfolio Button */}
             <Button
               onClick={scrollToNext}
               variant="outline"
@@ -60,6 +61,57 @@ export const Hero = () => {
               Explore Portfolio
               <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
             </Button>
+
+            {/* Social Links */}
+            <div className="flex items-center justify-center md:justify-start gap-4 mt-6">
+              <a
+                href="https://github.com/priyankpatel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 border-2 border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
+                aria-label="GitHub"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+
+              <a
+                href="https://linkedin.com/in/priyankpatel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 border-2 border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+
+              <a
+                href="https://x.com/priyankpatel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 border-2 border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
+                aria-label="Twitter / X"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
+
+              <a
+                href="mailto:priyank@example.com"
+                className="p-3 border-2 border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
+                aria-label="Email"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+
+              <a
+                href="https://instagram.com/priyankpatel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 border-2 border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

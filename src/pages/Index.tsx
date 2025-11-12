@@ -17,8 +17,15 @@ import {
   TrendingUp,
   CheckCircle2,
   Download,
-  ExternalLink
+  ExternalLink,
+  Link,
+  Github,
+  Linkedin,
+  Twitter,
+  Mail,
+  Instagram
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
@@ -157,20 +164,14 @@ const Index = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-3">
-              <div className="flex items-start gap-2">
-                <CheckCircle2 className="h-5 w-5 text-gray-600 dark:text-gray-400 mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-medium">Dean's List - Excellence in Academics</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">2023, 2024</p>
-                </div>
-              </div>
+              {/* NPTEL Certification */}
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="h-5 w-5 text-gray-600 dark:text-gray-400 mt-0.5 flex-shrink-0" />
                 <div className="flex-1">
-                  <p className="font-medium">AWS Certified Solutions Architect</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Amazon Web Services, 2024</p>
+                  <p className="font-medium">NPTEL – Human-Computer Interaction</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">NPTEL (IIIT) • 2025</p>
                   <a
-                    href="https://aws.amazon.com/verification"
+                    href="https://drive.google.com/file/d/1PkPoCo-Pjn-FEj7lBzjk6tadGhTDHnvJ/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline mt-1"
@@ -180,13 +181,50 @@ const Index = () => {
                   </a>
                 </div>
               </div>
+              {/* PDEU ACM Hackathon */}
               <div className="flex items-start gap-2">
                 <CheckCircle2 className="h-5 w-5 text-gray-600 dark:text-gray-400 mt-0.5 flex-shrink-0" />
                 <div className="flex-1">
-                  <p className="font-medium">Best Research Paper Award</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">International Conference, 2024</p>
+                  <p className="font-medium">Hackathon Runners-Up</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">PDEU ACM Hackathon • 2025</p>
                   <a
-                    href="https://example.com/paper-certificate"
+                    href="https://drive.google.com/file/d/1gKuUG_LWcnkboS3pFD08C8xi-zt1JAX0/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline mt-1"
+                  >
+                    View Certificate
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </div>
+              </div>
+
+              {/* DAIICT Hackathon */}
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-gray-600 dark:text-gray-400 mt-0.5 flex-shrink-0" />
+                <div className="flex-1">
+                  <p className="font-medium">Hackathon – DAIICT (2nd Round Qualifier)</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">DAIICT, Gandhinagar • 2025</p>
+                  <a
+                    href="https://drive.google.com/file/d/1KhocKzhAevdphWRJpRuU5_QushpmTC3h/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline mt-1"
+                  >
+                    View Certificate
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Career Essentials in Generative AI */}
+              <div className="flex items-start gap-2">
+                <CheckCircle2 className="h-5 w-5 text-gray-600 dark:text-gray-400 mt-0.5 flex-shrink-0" />
+                <div className="flex-1">
+                  <p className="font-medium">Career Essentials in Generative AI</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Microsoft & LinkedIn • 2024</p>
+                  <a
+                    href="https://drive.google.com/file/d/1OtHYy8L1X04lV9h3SdvY3_Ar24-VKPEU/view"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline mt-1"
@@ -199,6 +237,7 @@ const Index = () => {
             </CardContent>
           </Card>
 
+
           {/* Areas of Interest & Hobbies */}
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="border-2 shadow-md">
@@ -207,26 +246,76 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-400">
-                  <li>• Artificial Intelligence & Machine Learning</li>
-                  <li>• Data Science & Analytics</li>
-                  <li>• Sustainable Technology</li>
-                  <li>• Human-Computer Interaction</li>
+                  <li>• Web Development & Frontend Engineering</li>
+                  <li>• Artificial Intelligence & Generative AI</li>
+                  <li>• Human-Computer Interaction & UI/UX Design</li>
+                  <li>• Data Visualization & Analytics (Power BI, Dashboards)</li>
+                  <li>• Full-Stack Application Development (Next.js, React, Node.js)</li>
+                  <li>• Emerging Technologies & Innovation (Industry 4.0, Cloud)</li>
                 </ul>
               </CardContent>
             </Card>
+
             <Card className="border-2 shadow-md">
               <CardHeader className="bg-gray-50 dark:bg-gray-900">
                 <CardTitle className="text-lg">Hobbies & Interests</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-gray-600 dark:text-gray-400">
-                  <li>• Technical Writing & Blogging</li>
-                  <li>• Open Source Contributions</li>
-                  <li>• Photography</li>
                   <li className="flex items-center gap-1">
-                    • Mentoring Students
+                    • Drawing
                     <a
-                      href="https://example.com/mentoring"
+                      href="https://drawing-p.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline ml-1"
+                    >
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-1">
+                    • Music
+                    <a
+                      href="https://song-p.netlify.app/ "
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline ml-1"
+                    >
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-1">
+                    • Cricket
+                  </li>
+                  <li className="flex items-center gap-1">
+                    • Gaming
+                  </li>
+                  <li className="flex items-center gap-1">
+                    • Blog
+                    <a
+                      href="https://blogai-p.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline ml-1"
+                    >
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-1">
+                    • Film - Review
+                    <a
+                      href="https://film-p.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline ml-1"
+                    >
+                      <ExternalLink className="h-3 w-3" />
+                    </a>
+                  </li>
+                  <li className="flex items-center gap-1">
+                    • Gov Rules 2024-25
+                    <a
+                      href="https://patel-priyank-1602.github.io/Indian-Rules/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline ml-1"
@@ -251,104 +340,178 @@ const Index = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <ProjectCard
-            title="AI-Powered Healthcare Diagnostic System"
-            description="An interdisciplinary project combining machine learning, healthcare, and ethics to create an accessible diagnostic tool."
-            image="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop"
+            title="CineVerse – Movie & Series Planner"
+            description="A responsive OTT-style web app with a sleek streaming UI, featuring search, trailers, detailed info, and redirects for released and upcoming content."
+            image="/cine.png"
             objectives={[
-              "Develop accurate disease prediction models",
-              "Ensure ethical AI practices and patient privacy",
-              "Create accessible interface for medical professionals"
+              "Design an intuitive interface for movie and series tracking",
+              "Implement real-time search and trailer integration",
+              "Optimize performance for mobile and desktop users",
             ]}
-            methodology="Applied deep learning techniques with medical datasets, conducted ethical reviews, and collaborated with healthcare professionals for validation."
+            methodology="Developed using Next.js, TailwindCSS, and Vercel to deliver a seamless and responsive experience, integrating APIs for dynamic content."
             outcomes={[
-              "Achieved 92% accuracy in disease prediction",
-              "Published research paper in medical informatics journal",
-              "Implemented HIPAA-compliant data handling"
+              "Delivered a smooth movie exploration and planning experience",
+              "Achieved 100% responsive design compatibility",
+              "Improved engagement through interactive UI/UX",
             ]}
-            technologies={["Python", "TensorFlow", "React", "HIPAA Compliance"]}
+            technologies={["Next.js", "TailwindCSS", "JavaScript", "Vercel"]}
+            links={{
+              github: "https://github.com/Patel-Priyank-1602/movieweb-blog",
+              live: "https://cineverse-p.netlify.app/",
+            }}
           />
 
           <ProjectCard
-            title="Sustainable Smart City Infrastructure"
-            description="Research project integrating IoT, data analytics, and urban planning to optimize city resource management."
-            image="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=600&h=400&fit=crop"
+            title="InfraVision – H₂ Plant Planning Platform"
+            description="An AI-powered platform for green hydrogen infrastructure planning with interactive maps, AI insights, and real-time dashboards."
+            image="/infra.png"
             objectives={[
-              "Reduce energy consumption in urban areas",
-              "Implement real-time monitoring systems",
-              "Analyze environmental impact"
+              "Develop AI-driven planning for hydrogen plants",
+              "Integrate geospatial visualization tools",
+              "Implement secure authentication and data pipelines",
             ]}
-            methodology="Deployed IoT sensors, developed data analytics pipeline, and created visualization dashboards for city planners."
+            methodology="Built using React, TypeScript, TailwindCSS, Leaflet.js, and Supabase. Integrated Gemini API for AI insights and PostgreSQL for scalable data storage."
             outcomes={[
-              "Demonstrated 25% potential reduction in energy waste",
-              "Presented findings at international sustainability conference",
-              "Secured grant funding for pilot implementation"
+              "Enabled real-time AI-based analysis and planning",
+              "Presented in HackOut 2025, earning recognition for innovation",
+              "Secured grant consideration for pilot implementation",
             ]}
-            technologies={["IoT", "Big Data", "Cloud Computing", "GIS"]}
+            technologies={[
+              "React",
+              "TypeScript",
+              "Leaflet.js",
+              "Supabase",
+              "PostgreSQL",
+              "Gemini API",
+            ]}
+            links={{
+              github: "https://github.com/Patel-Priyank-1602/InfraVision.git",
+              live: "https://www.linkedin.com/posts/patel-priyank-945131288_hackout2025-greenhydrogen-ai-activity-7368260435646517250-9X0C",
+            }}
+          />
+
+          <ProjectCard
+            title="WebSync – Website Manager"
+            description="A customizable bookmark manager with category organization, instant search, dark/light mode, and drag-and-drop support."
+            image="/web.png"
+            objectives={[
+              "Simplify bookmark and link management",
+              "Enhance productivity with organized workflows",
+              "Provide seamless theme switching and drag functionality",
+            ]}
+            methodology="Developed with HTML, CSS, and JavaScript using a responsive design approach for desktop and mobile users."
+            outcomes={[
+              "Delivered high usability through instant search and drag features",
+              "Implemented user-friendly dark/light theme switching",
+              "Improved organization and accessibility for web resources",
+            ]}
+            technologies={["HTML", "CSS", "JavaScript"]}
+            links={{
+              github: "https://github.com/Patel-Priyank-1602/WebSyncP-.git",
+              live: "https://patel-priyank-1602.github.io/WebSyncP-/",
+            }}
+          />
+
+          <ProjectCard
+            title="CGPA Calculator – Engineering Students"
+            description="A Java Swing-based desktop app that calculates CGPA for engineering students with validation and grade automation."
+            image="/cgpa.png"
+            objectives={[
+              "Automate CGPA calculation for multiple semesters",
+              "Handle theory and lab subjects efficiently",
+              "Provide input validation and automated grade conversion",
+            ]}
+            methodology="Built using Java Swing with modular components for subject handling, computation, and UI interaction."
+            outcomes={[
+              "Simplified grade calculation for engineering students",
+              "Reduced manual errors through validation",
+              "Enhanced user experience with clear layout and automation",
+            ]}
+            technologies={["Java", "Swing"]}
+            links={{
+              github:
+                "https://github.com/Patel-Priyank-1602/PDEU-3rd-SEM-CGPA-Calculator-.git",
+              live:
+                "https://www.linkedin.com/posts/patel-priyank-945131288_java-programming-engineering-activity-7265681809449885699-zRXx",
+            }}
           />
         </div>
+
+        {/* View All Projects Button */}
+        <div className="flex justify-center mt-10">
+          <Button
+            size="lg"
+            variant="outline"
+            className="flex items-center gap-2"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/patel-priyank-945131288/",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }
+          >
+            <Link className="w-4 h-4" /> View All Projects
+          </Button>
+        </div>
       </Section>
+
 
       {/* Skills */}
       <Section
         id="skills"
         title="Advanced Skill Development & Mastery"
-        subtitle="Technical proficiencies and professional competencies"
+        subtitle="Technical proficiencies and professional competencies that drive innovation"
       >
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
           <SkillCategory
             title="Technical Skills"
-            description="Programming languages, frameworks, and tools"
+            description="Core programming languages, frameworks, and engineering tools"
             skills={[
               "Python",
-              "JavaScript/TypeScript",
+              "JavaScript / TypeScript",
               "React",
               "Node.js",
-              "Machine Learning",
-              "SQL/NoSQL",
-              "Cloud Platforms (AWS, Azure)",
+              "SQL Databases",
               "Git & Version Control",
               "Docker & Kubernetes",
-              "Data Visualization"
+              "Data Visualization",
             ]}
           />
+
           <SkillCategory
             title="Soft Skills"
-            description="Leadership, communication, and collaboration"
+            description="Leadership and communication abilities for collaborative problem-solving"
             skills={[
               "Leadership & Team Management",
-              "Public Speaking",
               "Technical Writing",
               "Critical Thinking",
               "Problem Solving",
               "Project Management",
-              "Cross-functional Collaboration",
-              "Mentoring",
-              "Adaptability",
-              "Time Management"
+              "Time Management",
             ]}
           />
+
           <SkillCategory
             title="Creative Competencies"
-            description="Design thinking and innovation"
+            description="Design thinking, creativity, and user-centered innovation"
             skills={[
               "Design Thinking",
-              "UI/UX Design",
+              "UI / UX Design",
               "Creative Problem Solving",
               "Prototyping",
               "User Research",
-              "Visual Communication"
+              "Visual Communication",
             ]}
           />
+
           <SkillCategory
             title="Research & Analysis"
-            description="Academic and analytical capabilities"
+            description="Academic research, statistical modeling, and experimental design"
             skills={[
-              "Research Methodology",
               "Statistical Analysis",
-              "Data Mining",
-              "Literature Review",
               "Experimental Design",
-              "Academic Writing"
+              "Academic Writing",
             ]}
           />
         </div>
@@ -358,7 +521,7 @@ const Index = () => {
       <Section
         id="leadership"
         title="Collaborative & Leadership Experiences"
-        subtitle="Building teams and driving collective success"
+        subtitle="Driving innovation through teamwork and leadership"
         className="bg-section-alt"
       >
         {/* Card 1: Team Pyshell & ShellNova */}
@@ -368,104 +531,85 @@ const Index = () => {
               <div className="p-2 bg-foreground text-background rounded-lg">
                 <Users className="h-6 w-6" />
               </div>
-              Team Leadership: Web Dev Head (Team Pyshell)
+              Web Dev Head – Team Pyshell (ShellNova 2025)
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4 pt-6"> {/* Added pt-6 for padding */}
-            <div>
-              <h4 className="font-semibold mb-2">Role & Responsibilities:</h4>
-              <p className="text-muted-foreground">
-                Served as **Web Development Head** for **Team Pyshell**, leading the
-                technical team for the **ShellNova** event. My responsibilities included
-                managing the web team's workflow, coordinating with design and
-                marketing divisions, and overseeing the entire development lifecycle
-                of the event's official website and registration portal.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-2">Key Achievements:</h4>
-              <ul className="list-disc list-inside text-muted-foreground space-y-1">
-                <li>
-                  Successfully designed and deployed the official **ShellNova** website,
-                  handling [e.g., 1000+] participant registrations.
-                </li>
-                <li>
-                  Developed a custom dashboard for event management, analytics, and
-                  participant tracking.
-                </li>
-                <li>
-                  Mentored a team of [e.g., 5] junior developers, guiding them in
-                  [e.g., React, Node.js, and database management].
-                </li>
-                <li>
-                  Ensured 99.9% website uptime and a seamless user experience
-                  during peak registration traffic.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-2">Team Dynamics & Conflict Resolution:</h4>
-              <p className="text-muted-foreground">
-                Implemented agile methodologies and structured communication channels
-                (e.g., weekly sprints, code reviews) to keep the team aligned.
-                Established clear roles and fostered a culture of open feedback,
-                mediating technical disagreements through collaborative
-                problem-solving.
-              </p>
-            </div>
+          <CardContent className="space-y-4 pt-6">
+            <p className="text-muted-foreground leading-relaxed">
+              Led the technical team for <strong>ShellNova 2025</strong> as Web Development Head,
+              managing the design, development, and deployment of the official website and registration system.
+            </p>
+            <ul className="list-disc list-inside text-muted-foreground space-y-1 leading-relaxed">
+              <li>Deployed event website handling 100+ registrations.</li>
+              <li>Built custom analytics and participant tracking dashboard.</li>
+              <li>Maintained 99.9% uptime during event peaks.</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed">
+              Implemented agile workflows, weekly sprints, and peer reviews to ensure collaboration and consistency.
+            </p>
           </CardContent>
         </Card>
 
-        {/* Card 2: Collaborative Project 1 */}
+        {/* Card 2: Collaborative Project – InfraVision */}
         <Card className="border-2 shadow-md">
           <CardHeader className="bg-muted/50">
             <CardTitle className="flex items-center gap-3 text-2xl">
               <div className="p-2 bg-foreground text-background rounded-lg">
                 <Target className="h-6 w-6" />
               </div>
-              Collaborative Project: [Your Project Name 1]
+              Collaborative Project: InfraVision
             </CardTitle>
           </CardHeader>
-          <CardContent className="pt-6"> {/* Added pt-6 for padding */}
-            <p className="text-muted-foreground">
-              Collaborated with an interdisciplinary team of [e.g., 3] members on
-              [e.g., 'a full-stack web application']. My primary role focused on
-              [e.g., 'backend development using Python/Flask and REST API design'].
-              We utilized Git for version control and held weekly sprints to
-              coordinate tasks and integrate features.
+          <CardContent className="pt-6 space-y-3">
+            <p className="text-muted-foreground leading-relaxed">
+              Contributed to <strong>InfraVision</strong> — an AI-powered hydrogen plant planning tool using React, TypeScript, and Supabase.
             </p>
+            <ul className="list-disc list-inside text-muted-foreground space-y-1 leading-relaxed">
+              <li>Integrated Gemini API for AI insights and geospatial mapping with Leaflet.js.</li>
+              <li>Built responsive dashboards and managed real-time data pipelines.</li>
+              <li>Recognized at HackOut 2025 for innovation and design excellence.</li>
+            </ul>
           </CardContent>
         </Card>
 
-        {/* Card 3: Collaborative Project 2 */}
+        {/* Card 3: Collaborative Project – Project Lakshya */}
         <Card className="border-2 shadow-md">
           <CardHeader className="bg-muted/50">
             <CardTitle className="flex items-center gap-3 text-2xl">
               <div className="p-2 bg-foreground text-background rounded-lg">
                 <Target className="h-6 w-6" />
               </div>
-              Collaborative Project: [Your Project Name 2]
+              Collaborative Project: Project Lakshya
             </CardTitle>
           </CardHeader>
-          <CardContent className="pt-6"> {/* Added pt-6 for padding */}
-            <p className="text-muted-foreground">
-              Worked with [e.g., 'designers and data analysts'] to build
-              [e.g., 'a data visualization dashboard']. I was responsible for
-              [e.g., 'fetching and processing data from multiple sources'] and
-              [e.g., 'implementing interactive charts using JavaScript'].
-              Facilitated knowledge sharing across domains to achieve project
-              goals.
+          <CardContent className="pt-6 space-y-3">
+            <p className="text-muted-foreground leading-relaxed">
+              Co-developed <strong>Project Lakshya</strong>, a TypeScript-based web app using React, TailwindCSS, and Supabase.
             </p>
+            <ul className="list-disc list-inside text-muted-foreground space-y-1 leading-relaxed">
+              <li>Contributed 30+ commits and optimized frontend performance.</li>
+              <li>Applied component-based architecture with Vite and ESLint.</li>
+              <li>Enhanced type safety and scalability in team-based development.</li>
+            </ul>
+            <div className="flex flex-wrap gap-2 pt-2">
+              {["TypeScript", "React", "TailwindCSS", "Supabase", "Vite", "ESLint"].map((tech, idx) => (
+                <Badge key={idx} variant="secondary" className="text-sm py-1 px-3">
+                  {tech}
+                </Badge>
+              ))}
+            </div>
           </CardContent>
         </Card>
       </Section>
+
 
       {/* Ethics */}
       <Section
         id="ethics"
         title="Global Awareness & Ethical Considerations"
-        subtitle="Responsibility, innovation, and global perspective"
+        subtitle="Ethics, inclusivity, and sustainability in innovation"
       >
+        {/* Card 1: Ethical AI & Responsible Innovation */}
         <Card className="border-2 shadow-md">
           <CardHeader className="bg-muted/50">
             <CardTitle className="flex items-center gap-3 text-2xl">
@@ -479,45 +623,46 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-2">Ethical Challenge:</h4>
               <p className="text-muted-foreground">
-                While developing <strong>InfraVision</strong> — an AI-driven platform for green hydrogen
-                infrastructure — I encountered challenges ensuring fairness, accuracy, and transparency
-                in AI predictions used for environmental decision-making.
+                While building <strong>InfraVision</strong> — an AI platform for optimizing green hydrogen
+                infrastructure — I faced the challenge of ensuring fairness, transparency, and accountability
+                in machine learning predictions impacting environmental and social decisions.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">Analysis & Response:</h4>
+              <h4 className="font-semibold mb-2">Approach & Action:</h4>
               <p className="text-muted-foreground">
-                To address these, I integrated explainable AI models, validated data sources, and
-                implemented open-data ethics. The project emphasized how sustainable innovation must
-                also prioritize ethical responsibility and real-world impact.
+                I adopted <strong>Explainable AI (XAI)</strong> frameworks, conducted bias audits, and
+                prioritized <strong>open-data ethics</strong> to maintain integrity and trust. The solution
+                reinforced that ethical responsibility is essential to truly sustainable innovation.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-2">Personal Reflection:</h4>
+              <h4 className="font-semibold mb-2">Reflection:</h4>
               <p className="text-muted-foreground">
-                This experience strengthened my belief that technology should serve humanity with
-                fairness, inclusivity, and sustainability. I aim to create digital solutions that not
-                only solve problems but also promote trust, equity, and global awareness in technology.
+                This experience deepened my conviction that technology must advance with <strong>equity,
+                  inclusivity, and global awareness</strong>. I strive to design digital systems that empower
+                people responsibly — balancing innovation with social and environmental good.
               </p>
             </div>
           </CardContent>
         </Card>
 
+        {/* Card 2: Global Collaboration & Cultural Awareness */}
         <Card className="border-2 shadow-md">
           <CardHeader className="bg-muted/50">
-            <CardTitle className="text-2xl">Global Perspective & Responsibility</CardTitle>
+            <CardTitle className="text-2xl">Global Collaboration & Responsibility</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-              Through projects like <strong>PyShell</strong>, <strong>CineVerse</strong>, and
-              <strong> WebSync</strong>, I’ve collaborated globally and embraced diverse user needs.
-              My approach combines modern design thinking with cultural inclusivity — ensuring that
-              my applications are accessible, responsible, and sustainable for users worldwide.
+              Across projects like <strong>AI-Powered Healthcare Diagnostics</strong>, <strong>PyShell</strong>,
+              <strong> CineVerse</strong>, and <strong>WebSync</strong>, I’ve worked with peers and users from
+              diverse backgrounds. Each collaboration reinforced my focus on <strong>human-centered design</strong>,
+              <strong> accessibility</strong>, and <strong>cultural inclusivity</strong> — ensuring technology
+              remains a tool for empowerment, not exclusion.
             </p>
           </CardContent>
         </Card>
       </Section>
-
 
       {/* Future Goals */}
       <Section
@@ -573,135 +718,160 @@ const Index = () => {
         </Card>
       </Section>
 
-      {/* Self-Assessment */}
+      {/* Future Goals */}
       <Section
-        id="conclusion"
-        title="Conclusion & Self-Assessment"
-        subtitle="Reflection on growth and future directions"
+        id="future"
+        title="Future Aspirations & Professional Development"
+        subtitle="Lifelong learning, leadership, and purposeful innovation"
+        className="bg-section-alt"
       >
         <Card className="border-2 shadow-md">
-          <CardContent className="pt-8 space-y-8">
-            <div>
-              <h4 className="font-semibold mb-3">Key Achievements:</h4>
-              <p className="text-muted-foreground leading-relaxed">
-                My journey as a developer has been defined by <strong>innovation, ethics, and impact</strong>.
-                From building <strong>CineVerse</strong> and <strong>WebSync</strong> to leading <strong>InfraVision</strong> —
-                an AI-powered sustainability platform — I’ve demonstrated the ability to merge
-                technical depth with meaningful, real-world outcomes. Recognitions such as being
-                <strong>2nd in the PDEU ACM Hackathon</strong> reflect my drive to create solutions that matter.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-3">Lessons Learned:</h4>
-              <p className="text-muted-foreground leading-relaxed">
-                I’ve learned that collaboration, empathy, and adaptability are just as vital as coding skills.
-                Every project taught me the importance of balancing <strong>innovation with responsibility</strong> —
-                ensuring technology remains inclusive, ethical, and accessible to all.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-xl">SWOT Analysis:</h4>
-              <div className="grid md:grid-cols-2 gap-6 mt-4">
-                <div className="p-6 border-2 rounded-lg bg-muted/30 hover:shadow-md transition-shadow">
-                  <h5 className="font-medium mb-2">Strengths</h5>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Strong foundation in full-stack web development</li>
-                    <li>• Passion for AI, sustainability, and innovation</li>
-                    <li>• Effective leadership and problem-solving</li>
-                    <li>• Rapid learning and adaptability</li>
-                  </ul>
-                </div>
-                <div className="p-6 border-2 rounded-lg bg-muted/30 hover:shadow-md transition-shadow">
-                  <h5 className="font-medium mb-2">Weaknesses</h5>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Limited corporate/industry exposure</li>
-                    <li>• Need to strengthen specialization in advanced AI models</li>
-                    <li>• Occasionally overextend scope in complex projects</li>
-                  </ul>
-                </div>
-                <div className="p-6 border-2 rounded-lg bg-muted/30 hover:shadow-md transition-shadow">
-                  <h5 className="font-medium mb-2">Opportunities</h5>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Expanding AI and sustainability sectors</li>
-                    <li>• Cross-disciplinary research collaborations</li>
-                    <li>• Growth in global open-source communities</li>
-                    <li>• Leadership in responsible tech development</li>
-                  </ul>
-                </div>
-                <div className="p-6 border-2 rounded-lg bg-muted/30 hover:shadow-md transition-shadow">
-                  <h5 className="font-medium mb-2">Threats</h5>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Rapid evolution of technology standards</li>
-                    <li>• Competitive innovation landscape</li>
-                    <li>• Ethical dilemmas in uncontrolled AI systems</li>
-                  </ul>
-                </div>
+          <CardHeader className="bg-muted/50">
+            <CardTitle className="flex items-center gap-3 text-2xl">
+              <div className="p-2 bg-foreground text-background rounded-lg">
+                <TrendingUp className="h-6 w-6" />
               </div>
+              Vision & Growth Roadmap
+            </CardTitle>
+          </CardHeader>
+
+          <CardContent className="space-y-6">
+            {/* Short-term Goals */}
+            <div>
+              <h4 className="font-semibold mb-3">Short-Term Goals (1–2 Years):</h4>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                <li>Strengthen expertise in <strong>AI-driven web ecosystems</strong> and <strong>cloud-native full-stack development</strong></li>
+                <li>Contribute actively to <strong>open-source projects</strong> promoting sustainability and ethical AI</li>
+                <li>Scale initiatives like <strong>InfraVision</strong> and <strong>PyShell</strong> into collaborative, community-powered platforms</li>
+              </ul>
             </div>
 
+            <Separator />
+
+            {/* Long-term Goals */}
             <div>
-              <h4 className="font-semibold mb-3">Areas for Growth:</h4>
-              <p className="text-muted-foreground leading-relaxed">
-                Moving forward, I aim to refine my expertise in <strong>ethical AI systems</strong>
-                and gain deeper <strong>industry experience</strong> through research and internships.
-                Enhancing focus, time management, and advanced AI model proficiency are my
-                next milestones toward becoming a well-rounded, globally aware technologist.
+              <h4 className="font-semibold mb-3">Long-Term Goals (3–5 Years):</h4>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2">
+                <li>Pursue advanced <strong>research or postgraduate studies</strong> in <strong>AI Ethics and Sustainable Computing</strong></li>
+                <li>Lead cross-disciplinary teams creating <strong>responsible AI solutions</strong> with global environmental and social impact</li>
+                <li>Establish mentorship programs and learning communities for <strong>emerging developers and innovators</strong></li>
+                <li>Contribute to shaping <strong>ethical AI governance</strong> and policies for transparent technology adoption worldwide</li>
+              </ul>
+            </div>
+
+            <Separator />
+
+            {/* Continuous Learning Strategy */}
+            <div>
+              <h4 className="font-semibold mb-3">Continuous Learning & Growth Philosophy:</h4>
+              <p className="text-muted-foreground">
+                I believe that meaningful progress stems from <strong>curiosity, collaboration, and continuous learning</strong>.
+                My growth strategy involves engaging in real-world projects, global hackathons, and interdisciplinary research.
+                Staying ahead in evolving domains like <strong>AI ethics, quantum computing, and Industry 4.0  </strong> will
+                empower me to design technology that is not just advanced — but <strong>ethical, inclusive, and future-ready</strong>.
               </p>
             </div>
           </CardContent>
         </Card>
       </Section>
 
-
       {/* Testimonials */}
       <Section
         id="testimonials"
         title="Testimonials"
-        subtitle="What colleagues and mentors say"
+        subtitle="Endorsements from mentors and collaborators"
         className="bg-section-alt"
       >
         <div className="grid md:grid-cols-2 gap-8">
+          {/* PyShell / Collaboration */}
           <TestimonialCard
-            quote="An exceptional student with remarkable ability to bridge theoretical concepts with practical applications. Their leadership in research projects has been outstanding."
-            author="Dr. Jane Smith"
-            position="Professor of Computer Science"
-            organization="University Name"
+            quote="Collaborating with Priyank on PyShell has been an inspiring journey. His technical precision, design sense, and proactive mindset helped turn ideas into well-structured, impactful solutions. He’s a true team player who elevates everyone’s performance."
+            author="Ansh Soni"
+            position="Developer of PyShell"
+            organization="Pyshell"
           />
+
+          {/* CineVerse */}
           <TestimonialCard
-            quote="Demonstrates excellent problem-solving skills and collaborative spirit. Their contributions to our team's projects were invaluable and showed great maturity."
-            author="John Doe"
-            position="Senior Software Engineer"
-            organization="Tech Company Inc."
+            quote="CineVerse is a prime example of Priyank’s creativity and technical craftsmanship. He built a modern, responsive OTT-style platform that seamlessly blends design, functionality, and performance—showing clear mastery of user-centered development."
+            author="Mit Patel"
+            position="Machine Learning Entusiast"
+            organization="Student at PDEU"
           />
+
+          {/* Academic / Leadership */}
           <TestimonialCard
-            quote="A natural leader who inspires others through dedication and innovation. Their work on sustainable technology solutions shows both technical excellence and social awareness."
-            author="Prof. Robert Johnson"
-            position="Department Head"
-            organization="Engineering Department"
+            quote="Priyank’s ability to transform complex technical concepts into innovative, real-world applications is remarkable. His curiosity and leadership within interdisciplinary projects make him a dependable and forward-thinking collaborator."
+            author="Yug Patel"
+            position="Developer of SiteCraft"
+            organization="Student at PDEU"
           />
+
+          {/* WebSync */}
           <TestimonialCard
-            quote="One of the most promising young researchers I've mentored. Their ethical approach to AI development and commitment to responsible innovation is exemplary."
-            author="Dr. Sarah Williams"
-            position="Research Director"
-            organization="AI Ethics Institute"
+            quote="Priyank’s WebSync project highlights his ability to identify real-world problems and engineer elegant, scalable solutions. His focus on usability and customization makes his work stand out as both practical and innovative."
+            author="Prince Patel"
+            position="Full-Stack Developer"
+            organization="Student at PDEU"
           />
         </div>
       </Section>
 
       {/* Footer */}
       <footer className="border-t-2 py-12 bg-foreground text-background">
-        <div className="container mx-auto px-4 lg:px-8 text-center space-y-4">
-          <p className="text-lg font-medium">
-            © 2025 Patel Priyank. All rights reserved.
-          </p>
-          <p className="text-sm opacity-80">
-            Created with dedication for Academic Excellence
-          </p>
-          <div className="w-20 h-1 bg-background/50 mx-auto mt-4"></div>
+      <div className="container mx-auto px-4 lg:px-8 text-center space-y-4">
+        <p className="text-lg font-medium">
+          © 2025 Patel Priyank. All rights reserved.
+        </p>
+        <p className="text-sm opacity-80">
+          Created with dedication for Academic Excellence
+        </p>
+
+        {/* Social Icons */}
+        <div className="flex justify-center gap-6 mt-4">
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:animate-wiggle inline-block transition-transform"
+          >
+            <Github className="w-6 h-6" />
+          </a>
+          <a
+            href="https://linkedin.com/in/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:animate-wiggle inline-block transition-transform"
+          >
+            <Linkedin className="w-6 h-6" />
+          </a>
+          <a
+            href="https://x.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:animate-wiggle inline-block transition-transform"
+          >
+            <Twitter className="w-6 h-6" />
+          </a>
+          <a
+            href="mailto:yourmail@example.com"
+            className="hover:animate-wiggle inline-block transition-transform"
+          >
+            <Mail className="w-6 h-6" />
+          </a>
+          <a
+            href="https://instagram.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:animate-wiggle inline-block transition-transform"
+          >
+            <Instagram className="w-6 h-6" />
+          </a>
         </div>
-      </footer>
+
+        <div className="w-20 h-1 bg-background/50 mx-auto mt-6"></div>
+      </div>
+    </footer>
     </div>
   );
 };
