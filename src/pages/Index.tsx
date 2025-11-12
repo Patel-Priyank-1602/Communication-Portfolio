@@ -31,26 +31,32 @@ const Index = () => {
       <Section
         id="about"
         title="Introduction & Learning Philosophy"
-        subtitle="My journey of continuous growth and academic excellence"
+        subtitle="A blend of innovation, curiosity, and real-world application"
         className="bg-section-alt"
       >
         <Card className="border-2 shadow-md">
           <CardContent className="pt-8 space-y-6">
             <p className="text-muted-foreground leading-relaxed">
-              My academic journey has been guided by a deep commitment to interdisciplinary learning
-              and innovation. I believe that true knowledge comes from the synthesis of diverse fields,
-              critical thinking, and real-world application.
+              I am an enthusiastic Computer Engineering student at Pandit Deendayal Energy University
+              with a strong foundation in web development, GUI design, and problem-solving.
+              My learning journey is driven by curiosity and a constant desire to bridge
+              theoretical knowledge with hands-on innovation.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Throughout my studies, I've embraced challenges as opportunities for growth, sought to
-              bridge theory with practice, and remained dedicated to making meaningful contributions
-              to my field and society at large.
+              Whether developing full-stack web applications with Next.js, React, and TailwindCSS
+              or building intelligent systems using AI and data visualization tools,
+              I approach every challenge as a chance to grow, collaborate, and create something impactful.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              I believe learning is a continuous process—rooted in creativity, integrity, and the
+              ability to adapt. My goal is to contribute to projects that merge technology and
+              human-centered design to make a lasting difference.
             </p>
             <div className="pt-4 space-y-2">
               <h4 className="font-semibold">Core Values:</h4>
               <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary">Excellence</Badge>
                 <Badge variant="secondary">Innovation</Badge>
+                <Badge variant="secondary">Excellence</Badge>
                 <Badge variant="secondary">Integrity</Badge>
                 <Badge variant="secondary">Collaboration</Badge>
                 <Badge variant="secondary">Continuous Learning</Badge>
@@ -92,8 +98,8 @@ const Index = () => {
               <div className="flex justify-between items-start gap-4">
                 <div className="flex-1">
                   <h4 className="font-semibold">Bachelor of Technology</h4>
-                  <p className="text-gray-600 dark:text-gray-400">Institution Name • 2019 - 2023</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">First Class with Distinction</p>
+                  <p className="text-gray-600 dark:text-gray-400">Pandit Deendayal Energy University • 2023 - 2027</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">CGPA : 8.99 /10</p>
                 </div>
                 <div className="flex-shrink-0">
                   <img
@@ -119,41 +125,24 @@ const Index = () => {
             <CardContent className="space-y-4">
               <div className="flex justify-between items-start gap-4">
                 <div className="flex-1">
-                  <h4 className="font-semibold">Research Assistant</h4>
-                  <p className="text-gray-600 dark:text-gray-400">University Research Lab • 2024 - Present</p>
+                  <h4 className="font-semibold">Web Developer</h4>
+                  <p className="text-gray-600 dark:text-gray-400">PyShell • May 2025 - Oct 2025</p>
                   <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mt-2 space-y-1">
-                    <li>Conducted research on machine learning applications</li>
-                    <li>Published papers in peer-reviewed journals</li>
-                    <li>Collaborated with interdisciplinary teams</li>
+                    <li>Developed 90% of the PyShell Web Frontend using Next.js, TailwindCSS, and JavaScript.</li>
+                    <li>Built 70%+ of the PyShell Documentation site, including structure, content, and styling.</li>
+                    <li>Delivered a responsive, accessible UI/UX with optimized performance and seamless navigation.</li>
+                    <li>Collaborated with the backend and design teams to ensure consistent functionality and scalability.</li>
                   </ul>
                 </div>
                 <div className="flex-shrink-0">
                   <img
-                    src="https://via.placeholder.com/80x80/3B82F6/FFFFFF?text=Research+Lab"
-                    alt="Research Lab Logo"
+                    src="/pyshell.jpeg"
+                    alt="PyShell Logo"
                     className="w-20 h-20 object-contain rounded-lg border-2 border-gray-200 dark:border-gray-700"
                   />
                 </div>
               </div>
-              <Separator />
-              <div className="flex justify-between items-start gap-4">
-                <div className="flex-1">
-                  <h4 className="font-semibold">Software Development Intern</h4>
-                  <p className="text-gray-600 dark:text-gray-400">Tech Company • Summer 2023</p>
-                  <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-400 mt-2 space-y-1">
-                    <li>Developed full-stack web applications</li>
-                    <li>Implemented automated testing frameworks</li>
-                    <li>Participated in agile development processes</li>
-                  </ul>
-                </div>
-                <div className="flex-shrink-0">
-                  <img
-                    src="https://via.placeholder.com/80x80/10B981/FFFFFF?text=Tech+Co"
-                    alt="Tech Company Logo"
-                    className="w-20 h-20 object-contain rounded-lg border-2 border-gray-200 dark:border-gray-700"
-                  />
-                </div>
-              </div>
+
             </CardContent>
           </Card>
 
