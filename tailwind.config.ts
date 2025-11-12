@@ -14,8 +14,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Inter', 'sans-serif'],
+        // Use a simple system sans-serif stack for both body and headings.
+        // This avoids loading external fonts and keeps typography simple.
+        display: ['ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Liberation Sans', 'sans-serif'],
+        body: ['ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'Liberation Sans', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
