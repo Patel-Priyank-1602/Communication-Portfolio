@@ -14,7 +14,8 @@ export const Hero = () => {
       id="home"
       className="min-h-screen flex items-center justify-center bg-gradient-to-b from-background via-section-alt to-background"
     >
-      <div className="container mx-auto px-4 md:px-8 lg:px-10 py-12 md:py-0">
+      {/* Increased top padding for mobile */}
+      <div className="container mx-auto px-4 md:px-8 lg:px-10 pt-24 pb-12 md:pt-12 md:pb-0">
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 md:gap-10 lg:gap-12">
           
           {/* LEFT — Profile Image */}
