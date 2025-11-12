@@ -830,7 +830,7 @@ const Index = () => {
         {/* Social Icons */}
         <div className="flex justify-center gap-6 mt-4">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Patel-Priyank-1602"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:animate-wiggle inline-block transition-transform"
@@ -838,7 +838,7 @@ const Index = () => {
             <Github className="w-6 h-6" />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/patel-priyank-945131288/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:animate-wiggle inline-block transition-transform"
@@ -846,7 +846,7 @@ const Index = () => {
             <Linkedin className="w-6 h-6" />
           </a>
           <a
-            href="https://x.com/yourusername"
+            href="https://x.com/Priyank_P16"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:animate-wiggle inline-block transition-transform"
@@ -854,13 +854,13 @@ const Index = () => {
             <Twitter className="w-6 h-6" />
           </a>
           <a
-            href="mailto:yourmail@example.com"
+            href="mailto:patelpriyank2526@gmail.com"
             className="hover:animate-wiggle inline-block transition-transform"
           >
             <Mail className="w-6 h-6" />
           </a>
           <a
-            href="https://instagram.com/yourusername"
+            href="https://www.instagram.com/patelpriyank.d/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:animate-wiggle inline-block transition-transform"

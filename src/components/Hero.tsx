@@ -65,7 +65,7 @@ export const Hero = () => {
             {/* Social Links */}
             <div className="flex items-center justify-center md:justify-start gap-4 mt-6">
               <a
-                href="https://github.com/priyankpatel"
+                href="https://github.com/Patel-Priyank-1602"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border-2 border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
@@ -75,7 +75,7 @@ export const Hero = () => {
               </a>
 
               <a
-                href="https://linkedin.com/in/priyankpatel"
+                href="https://www.linkedin.com/in/patel-priyank-945131288/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border-2 border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
@@ -85,7 +85,7 @@ export const Hero = () => {
               </a>
 
               <a
-                href="https://x.com/priyankpatel"
+                href="https://x.com/Priyank_P16"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border-2 border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
@@ -95,7 +95,7 @@ export const Hero = () => {
               </a>
 
               <a
-                href="mailto:priyank@example.com"
+                href="mailto:patelpriyank2526@gmail.com"
                 className="p-3 border-2 border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
                 aria-label="Email"
               >
@@ -103,7 +103,7 @@ export const Hero = () => {
               </a>
 
               <a
-                href="https://instagram.com/priyankpatel"
+                href="https://www.instagram.com/patelpriyank.d/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border-2 border-border rounded-full hover:bg-foreground hover:text-background transition-all duration-300"
