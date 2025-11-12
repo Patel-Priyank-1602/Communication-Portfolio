@@ -9,8 +9,8 @@ interface SkillCategoryProps {
 
 export const SkillCategory = ({ title, skills, description }: SkillCategoryProps) => {
   return (
-    <Card>
-      <CardHeader>
+    <Card className="hover:shadow-lg transition-shadow duration-300 bg-card">
+      <CardHeader className="pb-3">
         <CardTitle className="text-xl">{title}</CardTitle>
         {description && (
           <p className="text-sm text-muted-foreground mt-2">{description}</p>

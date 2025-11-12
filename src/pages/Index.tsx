@@ -25,14 +25,15 @@ const Index = () => {
       
       <Hero />
 
-      {/* Table of Contents */}
+      {/* Introduction & Philosophy */}
       <Section 
         id="about" 
         title="Introduction & Learning Philosophy"
         subtitle="My journey of continuous growth and academic excellence"
+        className="bg-section-alt"
       >
-        <Card>
-          <CardContent className="pt-6 space-y-4">
+        <Card className="border-2 shadow-md">
+          <CardContent className="pt-8 space-y-6">
             <p className="text-muted-foreground leading-relaxed">
               My academic journey has been guided by a deep commitment to interdisciplinary learning 
               and innovation. I believe that true knowledge comes from the synthesis of diverse fields, 
@@ -61,14 +62,16 @@ const Index = () => {
       <Section 
         id="resume" 
         title="Resume / CV"
-        className="bg-muted/30"
+        subtitle="Professional background and qualifications"
       >
-        <div className="space-y-6">
+        <div className="space-y-8">
           {/* Education */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <GraduationCap className="h-5 w-5" />
+          <Card className="border-2 shadow-md">
+            <CardHeader className="bg-muted/50">
+              <CardTitle className="flex items-center gap-3 text-2xl">
+                <div className="p-2 bg-foreground text-background rounded-lg">
+                  <GraduationCap className="h-6 w-6" />
+                </div>
                 Education
               </CardTitle>
             </CardHeader>
@@ -88,10 +91,12 @@ const Index = () => {
           </Card>
 
           {/* Work Experience */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Briefcase className="h-5 w-5" />
+          <Card className="border-2 shadow-md">
+            <CardHeader className="bg-muted/50">
+              <CardTitle className="flex items-center gap-3 text-2xl">
+                <div className="p-2 bg-foreground text-background rounded-lg">
+                  <Briefcase className="h-6 w-6" />
+                </div>
                 Work Experience
               </CardTitle>
             </CardHeader>
@@ -119,10 +124,12 @@ const Index = () => {
           </Card>
 
           {/* Awards & Certifications */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Award className="h-5 w-5" />
+          <Card className="border-2 shadow-md">
+            <CardHeader className="bg-muted/50">
+              <CardTitle className="flex items-center gap-3 text-2xl">
+                <div className="p-2 bg-foreground text-background rounded-lg">
+                  <Award className="h-6 w-6" />
+                </div>
                 Awards, Certifications & Achievements
               </CardTitle>
             </CardHeader>
@@ -152,9 +159,9 @@ const Index = () => {
           </Card>
 
           {/* Areas of Interest & Hobbies */}
-          <div className="grid md:grid-cols-2 gap-6">
-            <Card>
-              <CardHeader>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card className="border-2 shadow-md">
+              <CardHeader className="bg-muted/50">
                 <CardTitle className="text-lg">Areas of Interest</CardTitle>
               </CardHeader>
               <CardContent>
@@ -166,8 +173,8 @@ const Index = () => {
                 </ul>
               </CardContent>
             </Card>
-            <Card>
-              <CardHeader>
+            <Card className="border-2 shadow-md">
+              <CardHeader className="bg-muted/50">
                 <CardTitle className="text-lg">Hobbies & Interests</CardTitle>
               </CardHeader>
               <CardContent>
@@ -188,6 +195,7 @@ const Index = () => {
         id="projects" 
         title="Interdisciplinary Projects & Research"
         subtitle="Showcasing innovation through integrated problem-solving"
+        className="bg-section-alt"
       >
         <ProjectCard
           title="AI-Powered Healthcare Diagnostic System"
@@ -229,9 +237,8 @@ const Index = () => {
         id="skills" 
         title="Advanced Skill Development & Mastery"
         subtitle="Technical proficiencies and professional competencies"
-        className="bg-muted/30"
       >
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-8">
           <SkillCategory
             title="Technical Skills"
             description="Programming languages, frameworks, and tools"
@@ -296,11 +303,14 @@ const Index = () => {
         id="leadership" 
         title="Collaborative & Leadership Experiences"
         subtitle="Building teams and driving collective success"
+        className="bg-section-alt"
       >
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Users className="h-5 w-5" />
+        <Card className="border-2 shadow-md">
+          <CardHeader className="bg-muted/50">
+            <CardTitle className="flex items-center gap-3 text-2xl">
+              <div className="p-2 bg-foreground text-background rounded-lg">
+                <Users className="h-6 w-6" />
+              </div>
               Team Leadership: Student Innovation Club
             </CardTitle>
           </CardHeader>
@@ -333,10 +343,12 @@ const Index = () => {
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Target className="h-5 w-5" />
+        <Card className="border-2 shadow-md">
+          <CardHeader className="bg-muted/50">
+            <CardTitle className="flex items-center gap-3 text-2xl">
+              <div className="p-2 bg-foreground text-background rounded-lg">
+                <Target className="h-6 w-6" />
+              </div>
               Collaborative Research Project
             </CardTitle>
           </CardHeader>
@@ -355,12 +367,13 @@ const Index = () => {
         id="ethics" 
         title="Global Awareness & Ethical Considerations"
         subtitle="Responsibility, impact, and global perspective"
-        className="bg-muted/30"
       >
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Globe className="h-5 w-5" />
+        <Card className="border-2 shadow-md">
+          <CardHeader className="bg-muted/50">
+            <CardTitle className="flex items-center gap-3 text-2xl">
+              <div className="p-2 bg-foreground text-background rounded-lg">
+                <Globe className="h-6 w-6" />
+              </div>
               Case Study: AI Bias in Healthcare
             </CardTitle>
           </CardHeader>
@@ -392,9 +405,9 @@ const Index = () => {
           </CardContent>
         </Card>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Global Sustainability Perspective</CardTitle>
+        <Card className="border-2 shadow-md">
+          <CardHeader className="bg-muted/50">
+            <CardTitle className="text-2xl">Global Sustainability Perspective</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
@@ -412,11 +425,14 @@ const Index = () => {
         id="future" 
         title="Future Aspirations & Professional Development"
         subtitle="Continuous growth and long-term vision"
+        className="bg-section-alt"
       >
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <TrendingUp className="h-5 w-5" />
+        <Card className="border-2 shadow-md">
+          <CardHeader className="bg-muted/50">
+            <CardTitle className="flex items-center gap-3 text-2xl">
+              <div className="p-2 bg-foreground text-background rounded-lg">
+                <TrendingUp className="h-6 w-6" />
+              </div>
               Career Goals & Development Plan
             </CardTitle>
           </CardHeader>
@@ -463,10 +479,9 @@ const Index = () => {
         id="conclusion" 
         title="Conclusion & Self-Assessment"
         subtitle="Reflection on growth and future directions"
-        className="bg-muted/30"
       >
-        <Card>
-          <CardContent className="pt-6 space-y-6">
+        <Card className="border-2 shadow-md">
+          <CardContent className="pt-8 space-y-8">
             <div>
               <h4 className="font-semibold mb-3">Key Achievements:</h4>
               <p className="text-muted-foreground leading-relaxed">
@@ -488,9 +503,9 @@ const Index = () => {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-3">SWOT Analysis:</h4>
-              <div className="grid md:grid-cols-2 gap-4 mt-4">
-                <div className="p-4 border rounded-lg">
+              <h4 className="font-semibold mb-4 text-xl">SWOT Analysis:</h4>
+              <div className="grid md:grid-cols-2 gap-6 mt-4">
+                <div className="p-6 border-2 rounded-lg bg-muted/30 hover:shadow-md transition-shadow">
                   <h5 className="font-medium mb-2">Strengths</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Strong technical foundation</li>
@@ -499,7 +514,7 @@ const Index = () => {
                     <li>• Research capabilities</li>
                   </ul>
                 </div>
-                <div className="p-4 border rounded-lg">
+                <div className="p-6 border-2 rounded-lg bg-muted/30 hover:shadow-md transition-shadow">
                   <h5 className="font-medium mb-2">Weaknesses</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Limited industry experience</li>
@@ -507,7 +522,7 @@ const Index = () => {
                     <li>• Time management in complex projects</li>
                   </ul>
                 </div>
-                <div className="p-4 border rounded-lg">
+                <div className="p-6 border-2 rounded-lg bg-muted/30 hover:shadow-md transition-shadow">
                   <h5 className="font-medium mb-2">Opportunities</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Emerging AI technologies</li>
@@ -516,7 +531,7 @@ const Index = () => {
                     <li>• Ethical tech leadership</li>
                   </ul>
                 </div>
-                <div className="p-4 border rounded-lg">
+                <div className="p-6 border-2 rounded-lg bg-muted/30 hover:shadow-md transition-shadow">
                   <h5 className="font-medium mb-2">Threats</h5>
                   <ul className="text-sm text-muted-foreground space-y-1">
                     <li>• Rapid technological changes</li>
@@ -544,8 +559,9 @@ const Index = () => {
         id="testimonials" 
         title="Testimonials & Recommendations"
         subtitle="What colleagues and mentors say"
+        className="bg-section-alt"
       >
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-8">
           <TestimonialCard
             quote="An exceptional student with remarkable ability to bridge theoretical concepts with practical applications. Their leadership in research projects has been outstanding."
             author="Dr. Jane Smith"
@@ -574,14 +590,15 @@ const Index = () => {
       </Section>
 
       {/* Footer */}
-      <footer className="border-t py-8 bg-muted/30">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
-          <p className="text-muted-foreground">
+      <footer className="border-t-2 py-12 bg-foreground text-background">
+        <div className="container mx-auto px-4 lg:px-8 text-center space-y-4">
+          <p className="text-lg font-medium">
             © 2025 Your Name. All rights reserved.
           </p>
-          <p className="text-sm text-muted-foreground mt-2">
+          <p className="text-sm opacity-80">
             Created with dedication for academic excellence
           </p>
+          <div className="w-20 h-1 bg-background/50 mx-auto mt-4"></div>
         </div>
       </footer>
     </div>

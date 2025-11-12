@@ -19,8 +19,8 @@ export const ProjectCard = ({
   technologies,
 }: ProjectCardProps) => {
   return (
-    <Card className="border-2 hover:border-foreground/20 transition-colors">
-      <CardHeader>
+    <Card className="border-2 hover:border-foreground/40 hover:shadow-xl transition-all duration-300 bg-card">
+      <CardHeader className="pb-4">
         <CardTitle className="text-2xl">{title}</CardTitle>
         <CardDescription className="text-base">{description}</CardDescription>
       </CardHeader>
