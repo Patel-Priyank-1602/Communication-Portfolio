@@ -256,7 +256,7 @@ const Index = () => {
       {/* Projects */}
       <Section
         id="projects"
-        title="Interdisciplinary Projects & Research"
+        title="Projects & Research"
         subtitle="Showcasing innovation through integrated problem-solving"
         className="bg-section-alt"
       >
@@ -669,7 +669,7 @@ const Index = () => {
       {/* Testimonials */}
       <Section
         id="testimonials"
-        title="Testimonials & Recommendations"
+        title="Testimonials"
         subtitle="What colleagues and mentors say"
         className="bg-section-alt"
       >

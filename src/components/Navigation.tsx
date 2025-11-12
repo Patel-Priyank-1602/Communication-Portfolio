@@ -52,14 +52,29 @@ export const Navigation = () => {
   }, []);
 
   useEffect(() => {
-    // Prevent body scroll when menu is open
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
+    const resetBodyStyles = () => {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    };
+
+    if (!isOpen) {
+      resetBodyStyles();
+      return;
     }
+
+    const updateBodyPadding = () => {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.paddingRight = scrollbarWidth > 0 ? `${scrollbarWidth}px` : "";
+    };
+
+    document.body.style.overflow = "hidden";
+    updateBodyPadding();
+
+    window.addEventListener("resize", updateBodyPadding);
+
     return () => {
-      document.body.style.overflow = 'unset';
+      window.removeEventListener("resize", updateBodyPadding);
+      resetBodyStyles();
     };
   }, [isOpen]);
 
@@ -78,12 +93,12 @@ export const Navigation = () => {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-sm">
-        <div className="w-full px-4 lg:px-8">
-          <div className="flex items-center justify-between h-16 max-w-full">
-            <h1 className="text-xl font-bold tracking-tight font-display flex-shrink-0">Portfolio</h1>
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            <h1 className="text-xl font-bold tracking-tight font-display">Portfolio</h1>
             
             {/* Desktop Navigation (with icons) */}
-            <div className="hidden md:flex items-center gap-1 flex-shrink-0">
+            <div className="hidden md:flex items-center gap-1">
               {navItems.map((item) => {
                 const Icon = item.icon as any;
                 return (
@@ -109,7 +124,7 @@ export const Navigation = () => {
             <Button
               variant="ghost"
               size="sm"
-              className="md:hidden p-2 flex-shrink-0"
+              className="md:hidden p-2"
               onClick={() => setIsOpen(!isOpen)}
               aria-expanded={isOpen}
               aria-label={isOpen ? "Close menu" : "Open menu"}
