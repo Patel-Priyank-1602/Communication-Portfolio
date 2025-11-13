@@ -668,61 +668,7 @@ const Index = () => {
       <Section
         id="future"
         title="Future Aspirations & Professional Development"
-        subtitle="Continuous growth and long-term vision"
-        className="bg-section-alt"
-      >
-        <Card className="border-2 shadow-md">
-          <CardHeader className="bg-muted/50">
-            <CardTitle className="flex items-center gap-3 text-2xl">
-              <div className="p-2 bg-foreground text-background rounded-lg">
-                <TrendingUp className="h-6 w-6" />
-              </div>
-              Career Goals & Development Plan
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div>
-              <h4 className="font-semibold mb-3">Short-term Goals (1–2 years):</h4>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Advance technical expertise in <strong>AI-driven web systems</strong> and full-stack cloud architecture</li>
-                <li>Earn certifications in <strong>Machine Learning, Cloud (AWS/Azure)</strong>, and <strong>UI/UX Engineering</strong></li>
-                <li>Contribute to <strong>open-source AI and sustainability projects</strong></li>
-                <li>Expand <strong>InfraVision</strong> and <strong>PyShell</strong> into scalable, community-oriented platforms</li>
-              </ul>
-            </div>
-
-            <Separator />
-
-            <div>
-              <h4 className="font-semibold mb-3">Long-term Goals (3–5 years):</h4>
-              <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Pursue <strong>research or postgraduate studies</strong> in AI ethics and sustainable computing</li>
-                <li>Lead innovative projects combining <strong>AI, environmental awareness, and design thinking</strong></li>
-                <li>Establish mentorship and learning initiatives for <strong>emerging developers</strong></li>
-                <li>Contribute to <strong>ethical AI policy</strong> and responsible technology adoption worldwide</li>
-              </ul>
-            </div>
-
-            <Separator />
-
-            <div>
-              <h4 className="font-semibold mb-3">Continuous Learning Strategy:</h4>
-              <p className="text-muted-foreground">
-                I believe growth is fueled by curiosity and adaptability. I plan to continue learning through
-                hands-on projects, hackathons, online courses, and collaboration with global developer
-                communities. Staying informed about emerging fields like <strong>AI ethics, quantum computing, and Industry 4.0</strong>
-                will guide my evolution as a responsible and future-ready technologist.
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-      </Section>
-
-      {/* Future Goals */}
-      <Section
-        id="future"
-        title="Future Aspirations & Professional Development"
-        subtitle="Lifelong learning, leadership, and purposeful innovation"
+        subtitle="Focused growth, innovation, and leadership"
         className="bg-section-alt"
       >
         <Card className="border-2 shadow-md">
@@ -736,13 +682,14 @@ const Index = () => {
           </CardHeader>
 
           <CardContent className="space-y-6">
+
             {/* Short-term Goals */}
             <div>
               <h4 className="font-semibold mb-3">Short-Term Goals (1–2 Years):</h4>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Strengthen expertise in <strong>AI-driven web ecosystems</strong> and <strong>cloud-native full-stack development</strong></li>
-                <li>Contribute actively to <strong>open-source projects</strong> promoting sustainability and ethical AI</li>
-                <li>Scale initiatives like <strong>InfraVision</strong> and <strong>PyShell</strong> into collaborative, community-powered platforms</li>
+                <li>Advance skills in <strong>AI-powered web systems</strong> and <strong>cloud-native development</strong></li>
+                <li>Contribute to <strong>ethical AI</strong> and open-source work</li>
+                <li>Grow projects like <strong>InfraVision</strong> & <strong>PyShell</strong> with community involvement</li>
               </ul>
             </div>
 
@@ -752,10 +699,10 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-3">Long-Term Goals (3–5 Years):</h4>
               <ul className="list-disc list-inside text-muted-foreground space-y-2">
-                <li>Pursue advanced <strong>research or postgraduate studies</strong> in <strong>AI Ethics and Sustainable Computing</strong></li>
-                <li>Lead cross-disciplinary teams creating <strong>responsible AI solutions</strong> with global environmental and social impact</li>
-                <li>Establish mentorship programs and learning communities for <strong>emerging developers and innovators</strong></li>
-                <li>Contribute to shaping <strong>ethical AI governance</strong> and policies for transparent technology adoption worldwide</li>
+                <li>Pursue advanced studies in <strong>AI Ethics</strong> & sustainable computing</li>
+                <li>Lead teams building <strong>responsible AI solutions</strong></li>
+                <li>Create mentorship paths for rising developers</li>
+                <li>Help shape global <strong>ethical AI policies</strong></li>
               </ul>
             </div>
 
@@ -765,15 +712,65 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-3">Continuous Learning & Growth Philosophy:</h4>
               <p className="text-muted-foreground">
-                I believe that meaningful progress stems from <strong>curiosity, collaboration, and continuous learning</strong>.
-                My growth strategy involves engaging in real-world projects, global hackathons, and interdisciplinary research.
-                Staying ahead in evolving domains like <strong>AI ethics, quantum computing, and Industry 4.0  </strong> will
-                empower me to design technology that is not just advanced — but <strong>ethical, inclusive, and future-ready</strong>.
+                Growth through <strong>curiosity, collaboration, and hands-on work</strong>.
+                Staying updated across <strong>AI ethics, quantum tech,</strong> and emerging digital ecosystems ensures building <strong>ethical and future-ready</strong> solutions.
               </p>
+            </div>
+
+            <Separator />
+
+            {/* SWOT Analysis */}
+            <div>
+              <h4 className="font-semibold mb-3">SWOT Analysis:</h4>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-muted-foreground">
+
+                {/* Strengths */}
+                <div className="p-4 rounded-lg border bg-muted/40">
+                  <h5 className="font-semibold mb-2">Strengths</h5>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Strong full-stack & AI fundamentals</li>
+                    <li>Quick learner and adaptable</li>
+                    <li>Real-world & open-source experience</li>
+                  </ul>
+                </div>
+
+                {/* Weaknesses */}
+                <div className="p-4 rounded-lg border bg-muted/40">
+                  <h5 className="font-semibold mb-2">Weaknesses</h5>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Need deeper research exposure</li>
+                    <li>Expanding professional network</li>
+                    <li>Strengthening advanced math for AI</li>
+                  </ul>
+                </div>
+
+                {/* Opportunities */}
+                <div className="p-4 rounded-lg border bg-muted/40">
+                  <h5 className="font-semibold mb-2">Opportunities</h5>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Rising demand for ethical AI</li>
+                    <li>Growing open-source ecosystems</li>
+                    <li>Emerging fields like quantum & Industry 4.0</li>
+                  </ul>
+                </div>
+
+                {/* Threats */}
+                <div className="p-4 rounded-lg border bg-muted/40">
+                  <h5 className="font-semibold mb-2">Threats</h5>
+                  <ul className="list-disc list-inside space-y-1">
+                    <li>Fast-changing tech landscape</li>
+                    <li>High competition in AI fields</li>
+                    <li>Regulatory and ethical challenges</li>
+                  </ul>
+                </div>
+
+              </div>
             </div>
           </CardContent>
         </Card>
       </Section>
+
 
       {/* Testimonials */}
       <Section
@@ -819,59 +816,59 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="border-t-2 py-12 bg-foreground text-background">
-      <div className="container mx-auto px-4 lg:px-8 text-center space-y-4">
-        <p className="text-lg font-medium">
-          © 2025 Patel Priyank. All rights reserved.
-        </p>
-        <p className="text-sm opacity-80">
-          Created with dedication for Academic Excellence
-        </p>
+        <div className="container mx-auto px-4 lg:px-8 text-center space-y-4">
+          <p className="text-lg font-medium">
+            © 2025 Patel Priyank. All rights reserved.
+          </p>
+          <p className="text-sm opacity-80">
+            Created with dedication for Academic Excellence
+          </p>
 
-        {/* Social Icons */}
-        <div className="flex justify-center gap-6 mt-4">
-          <a
-            href="https://github.com/Patel-Priyank-1602"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:animate-wiggle inline-block transition-transform"
-          >
-            <Github className="w-6 h-6" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/patel-priyank-945131288/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:animate-wiggle inline-block transition-transform"
-          >
-            <Linkedin className="w-6 h-6" />
-          </a>
-          <a
-            href="https://x.com/Priyank_P16"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:animate-wiggle inline-block transition-transform"
-          >
-            <Twitter className="w-6 h-6" />
-          </a>
-          <a
-            href="mailto:patelpriyank2526@gmail.com"
-            className="hover:animate-wiggle inline-block transition-transform"
-          >
-            <Mail className="w-6 h-6" />
-          </a>
-          <a
-            href="https://www.instagram.com/patelpriyank.d/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:animate-wiggle inline-block transition-transform"
-          >
-            <Instagram className="w-6 h-6" />
-          </a>
+          {/* Social Icons */}
+          <div className="flex justify-center gap-6 mt-4">
+            <a
+              href="https://github.com/Patel-Priyank-1602"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:animate-wiggle inline-block transition-transform"
+            >
+              <Github className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/patel-priyank-945131288/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:animate-wiggle inline-block transition-transform"
+            >
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a
+              href="https://x.com/Priyank_P16"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:animate-wiggle inline-block transition-transform"
+            >
+              <Twitter className="w-6 h-6" />
+            </a>
+            <a
+              href="mailto:patelpriyank2526@gmail.com"
+              className="hover:animate-wiggle inline-block transition-transform"
+            >
+              <Mail className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.instagram.com/patelpriyank.d/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:animate-wiggle inline-block transition-transform"
+            >
+              <Instagram className="w-6 h-6" />
+            </a>
+          </div>
+
+          <div className="w-20 h-1 bg-background/50 mx-auto mt-6"></div>
         </div>
-
-        <div className="w-20 h-1 bg-background/50 mx-auto mt-6"></div>
-      </div>
-    </footer>
+      </footer>
     </div>
   );
 };
